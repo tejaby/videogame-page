@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>categorías</title>
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!-- Iconos Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Normalize -->
+  <link rel="stylesheet" href="../style/normalize.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="shortcut icon" href="../assets/ico.png" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg p-2 navbar-background">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/logo.png" alt="" />
+        gameStore
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Nuevo y destacado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#ofertas">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./categorias.html">Tu tienda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link-categorias" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item p-2" href="./categorias.html#accion">Acción</a>
+              </li>
+              <li>
+                <a class="dropdown-item p-2" href="./categorias.html#rol">Rol</a>
+              </li>
+              <li>
+                <a class="dropdown-item p-2" href="./categorias.html#aventura">Aventura</a>
+              </li>
+              <li>
+                <a class="dropdown-item p-2" href="./categorias.html#terror">Terror</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./soporte.html">Soporte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5 pb-5 backgroundColor">
+    <div class="container">
+      <section class="row justify-content-center mb-5"">
+          <article class=" col-12 col-lg-10">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+          data-bs-interval="5000">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="../assets/carousel/battlefieldV.jpg" class="d-block w-100 imageCarousel" alt="Battlefield™ V" />
+              <div class="carousel-caption d-none d-md-flex">
+                <div class="caption-item1">
+                  <h5 class="fs-2">Battlefield™ V</h5>
+                  <div class="tags">
+                    <span class="p-1 rounded reciente">FPS</span>
+                    <span class="p-1 rounded reciente">Disparos</span>
+                    <span class="p-1 rounded reciente">Multijugador</span>
+                  </div>
+                </div>
+                <div class="caption-item2">
+                  <span class="p-2 rounded precio">$49.99 USD</span>
+                  <a href="./categorias.html" class="p-1 rounded btn-obtener">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/carousel/eldenRing.jpg" class="d-block w-100 imageCarousel" alt="Elden Ring" />
+              <div class="carousel-caption d-none d-md-flex">
+                <div class="caption-item1">
+                  <h5 class="fs-2">Elden Ring</h5>
+                  <div class="tags">
+                    <span class="p-1 rounded reciente">Rol</span>
+                    <span class="p-1 rounded reciente">Fantasía</span>
+                    <span class="p-1 rounded reciente">Difíciles</span>
+                  </div>
+                </div>
+                <div class="caption-item2">
+                  <span class="p-2 rounded precio">$79.99 USD</span>
+                  <a href="./categorias.html" class="p-1 rounded btn-obtener">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/carousel/farcry5.jpg" class="d-block w-100 imageCarousel" alt="Far Cry® 5" />
+              <div class="carousel-caption d-none d-md-flex">
+                <div class="caption-item1">
+                  <h5 class="fs-2">Far Cry® 5</h5>
+                  <div class="tags">
+                    <span class="p-1 rounded reciente">Mundo abirto</span>
+                    <span class="p-1 rounded reciente">Fps</span>
+                    <span class="p-1 rounded reciente">Caza</span>
+                  </div>
+                </div>
+                <div class="caption-item2">
+                  <span class="p-2 rounded precio">$49.99 USD</span>
+                  <a href="./categorias.html" class="p-1 rounded btn-obtener">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/carousel/spiderMan.jpg" class="d-block w-100 imageCarousel"
+                alt="Marvel’s Spider-Man" />
+              <div class="carousel-caption d-none d-md-flex">
+                <div class="caption-item1">
+                  <h5 class="fs-2">Marvel’s Spider-Man</h5>
+                  <div class="tags">
+                    <span class="p-1 rounded reciente">Superhéroes</span>
+                    <span class="p-1 rounded reciente">Parkour</span>
+                    <span class="p-1 rounded reciente">Acción</span>
+                  </div>
+                </div>
+                <div class="caption-item2">
+                  <span class="p-2 rounded precio">$40.19 USD</span>
+                  <a href="./categorias.html" class="p-1 rounded btn-obtener">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/carousel/deadSpace.jpg" class="d-block w-100 imageCarousel"
+                alt="Marvel’s Spider-Man" />
+              <div class="carousel-caption d-none d-md-flex">
+                <div class="caption-item1">
+                  <h5 class="fs-2">Dead Space</h5>
+                  <div class="tags">
+                    <span class="p-1 rounded reciente">Terror</span>
+                    <span class="p-1 rounded reciente">Espacio</span>
+                    <span class="p-1 rounded reciente">Ciencia ficción</span>
+                  </div>
+                </div>
+                <div class="caption-item2">
+                  <span class="p-2 rounded precio">$69.99 USD</span>
+                  <a href="./index.html#ofertas" class="p-1 rounded btn-obtener">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/carousel/forzaHorizonV.jpg" class="d-block w-100 imageCarousel"
+                alt="Forza Horizon 5" />
+              <div class="carousel-caption d-none d-md-flex">
+                <div class="caption-item1">
+                  <h5 class="fs-2">Forza Horizon 5</h5>
+                  <div class="tags">
+                    <span class="p-1 rounded reciente">Carreras</span>
+                    <span class="p-1 rounded reciente">Mundo abierto</span>
+                    <span class="p-1 rounded reciente">Realista</span>
+                  </div>
+                </div>
+                <div class="caption-item2">
+                  <span class="p-2 rounded precio">$59.99 USD</span>
+                  <a href="./index.html#ofertas" class="p-1 rounded btn-obtener">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </article>
+      </section>
+
+      <section class="row align-items-center mb-5 rounded categorias">
+        <div class="d-flex align-items-center justify-content-between p-2">
+          <h5 class="p-2 text-verMas animate__animated animate__headShake">
+            ACCIÓN
+          </h5>
+          <a href="./categorias.html#accion" class="p-2 rounded btn-verMas">Ver más</a>
+        </div>
+        <article class="col-12 col-md-6 col-lg-3" id="accion">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/accion/counterStrike.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Counter Strike">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Counter Strike</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$00.00 USD</span>
+                  <a href="./categorias.html#accion" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/accion/farCry5.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Far Cry 5">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Far Cry 5</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$49.99 USD</span>
+                  <a href="./categorias.html#accion" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/accion/Sekiro.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Sekiro">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Sekiro</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$59.99 USD</span>
+                  <a href="./categorias.html#accion" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/accion/battlefieldV.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Battlefield V">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Battlefield V</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$49.99 USD</span>
+                  <a href="./categorias.html#accion" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+      </section>
+
+      <section class="row align-items-center mb-5 rounded categorias">
+        <div class="d-flex align-items-center justify-content-between p-2">
+          <h5 class="p-2 text-verMas animate__animated animate__headShake">
+            ROL
+          </h5>
+          <a href="./categorias.html#rol" class="p-2 rounded btn-verMas">Ver más</a>
+        </div>
+        <article class="col-12 col-md-6 col-lg-3" id="rol">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/rol/eldenRing.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Elden Ring">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Elden Ring</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$79.99 USD</span>
+                  <a href="./categorias.html#rol" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/rol/skyrim.jpg" class="img-fluid rounded-start imageRol" alt="Skyrim">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Skyrim</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$39.99 USD</span>
+                  <a href="./categorias.html#rol" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/rol/newWolrd.jpg" class="img-fluid rounded-start imageRol"
+                    alt="New World">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">New World</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$29.99 USD</span>
+                  <a href="./categorias.html#rol" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/rol/warframe.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Warframe">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Warframe</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$00.00 USD</span>
+                  <a href="./categorias.html#rol" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="row align-items-center mb-5 rounded categorias">
+        <div class="d-flex align-items-center justify-content-between p-2">
+          <h5 class="p-2 text-verMas animate__animated animate__headShake">
+            AVENTURA
+          </h5>
+          <a href="./categorias.html#accion" class="p-2 rounded btn-verMas">Ver más</a>
+        </div>
+        <article class="col-12 col-md-6 col-lg-3" id="aventura">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/aventura/rust.jpg" class="img-fluid rounded-start imageRol" alt="rust">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Rust</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$39.99 USD</span>
+                  <a href="./categorias.html#aventura" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/aventura/theWitcher3.jpg" class="img-fluid rounded-start imageRol"
+                    alt="The Witcher 3">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">The Witcher 3</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$39.99 USD</span>
+                  <a href="./categorias.html#aventura" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/aventura/seaofThieves.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Sea of Thieves">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Sea of Thieves</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$39.99 USD</span>
+                  <a href="./categorias.html#aventura" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/aventura/spiderMan.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Spider-Man">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Spider-Man</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$40.19 USD</span>
+                  <a href="./categorias.html#aventura" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="row align-items-center rounded categorias">
+        <div class="d-flex align-items-center justify-content-between p-2">
+          <h5 class="p-2 text-verMas animate__animated animate__headShake">
+            TERROR
+          </h5>
+          <a href="./categorias.html#accion" class="p-2 rounded btn-verMas">Ver más</a>
+        </div>
+        <article class="col-12 col-md-6 col-lg-3" id="terror">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/terror/outlast2.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Outlast 2">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Outlast 2</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$29.99 USD</span>
+                  <a href="./categorias.html#terror" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/terror/littleNightmares.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Little Nightmares">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Little Nightmares</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$39.99 USD</span>
+                  <a href="./categorias.html#terror" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/terror/deadSpace.jpg" class="img-fluid rounded-start imageRol"
+                    alt="Dead Space">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Dead Space</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$69.99 USD</span>
+                  <a href="./categorias.html#terror" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3">
+          <div class="card mb-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-4 col-md-12">
+                <div class="overflowRol">
+                  <img src="../assets/Categorias/terror/residentEvilVillage.jpg"
+                    class="img-fluid rounded-start imageRol" alt="Resident Evil">
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-body p-0 text-center p-md-3">
+                  <h5 class="card-title cardTitle">Resident Evil</h5>
+                  <span class="cardPuntuacion">Reseñas:</span>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="card-footer d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                  <span class="p-1 p-md-2 rounded price">$39.99 USD</span>
+                  <a href="./categorias.html#terror" class="p-1 p-md-2 rounded btn-comprar">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="p-4 footer-background">
+    <div class="container text-center text-white">
+      <nav class="d-flex justify-content-evenly">
+        <a href="https://www.github.com/tejaby" target="_blank" class="animate__animated animate__tada icono"><i
+            class="bi bi-github fs-4"></i></a>
+        <a href="https://www.twitter.com/yostintejaby" target="_blank" class="animate__animated animate__tada icono"><i
+            class="bi bi-twitter fs-4"></i></a>
+        <a href="https://www.twitch.tv/yostintejaby" target="_blank" class="animate__animated animate__tada icono"><i
+            class="bi bi-twitch fs-4"></i></a>
+      </nav>
+      <small>&copy; 2023 Yostintejaby Corporation</small>
+    </div>
+  </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

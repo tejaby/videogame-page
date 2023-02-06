@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gameStore</title>
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!-- Iconos Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./style/normalize.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="shortcut icon" href="./assets/ico.png" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg p-2 navbar-background">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/logo.png" alt="gameStore" class="rounded-5" />
+        gameStore
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Nuevo y destacado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#ofertas">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/categorias.html">Tu tienda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link-categorias" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item p-2" href="./pages/categorias.html#accion">Acción</a>
+              </li>
+              <li>
+                <a class="dropdown-item p-2" href="./pages/categorias.html#rol">Rol</a>
+              </li>
+              <li>
+                <a class="dropdown-item p-2" href="./pages/categorias.html#aventura">Aventura</a>
+              </li>
+              <li>
+                <a class="dropdown-item p-2" href="./pages/categorias.html#terror"> Terror</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/soporte.html">Soporte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5 pb-5 backgroundColor">
+    <div class="container">
+      <section class="row align-items-center mb-5 g-3">
+        <article class="col-12 col-lg-5 order-lg-1">
+          <h2 class="text-novedades">Dead Space</h2>
+          <p class="text-novedad-info">
+            Disfruta de Hogwarts en el siglo XIX. Tu personaje es un
+            estudiante que tiene la clave de un antiguo secreto que amenaza la
+            estabilidad del mundo mágico. Consigue aliados, enfréntate a magos
+            tenebrosos y decide el destino del mundo mágico. Tú defines tu
+            legado. Escribe tu propia historia.
+          </p>
+          <span class="p-2 rounded destacado">Ya disponible</span>
+          <a href="./index.html" class="p-2 rounded btn-obtener">Comprar</a>
+          <!-- modal -->
+          <div class="modal fade" id="modalDeadSpace" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Dead Space
+                  </h2>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                  <img src="./assets/destacado/deadSpaceModal.gif" alt="Starfield" class="img-fluid rounded" />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="p-2 rounded btnModalCerrar" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+        </article>
+        <article class="col-12 col-lg-7 order-lg-2">
+          <div class="overflowNovedad">
+            <!-- button modal-->
+            <button type="button" class="btnModalMas" data-bs-toggle="modal" data-bs-target="#modalDeadSpace">
+              <i class="bi bi-zoom-in fs-2"></i>
+            </button>
+            <img src="./assets/destacado/deadSpace.jpg" class="img-fluid rounded img-novedad" alt="Hogwarts Legacy" />
+          </div>
+        </article>
+        <article class="col-12 col-lg-5 order-lg-4">
+          <h2 class="text-novedades">Hogwarts Legacy</h2>
+          <p class="text-novedad-info">
+            Disfruta de Hogwarts en el siglo XIX. Tu personaje es un
+            estudiante que tiene la clave de un antiguo secreto que amenaza la
+            estabilidad del mundo mágico. Consigue aliados, enfréntate a magos
+            tenebrosos y decide el destino del mundo mágico. Tú defines tu
+            legado. Escribe tu propia historia.
+          </p>
+          <span class="p-2 rounded destacado">Ya disponible</span>
+          <a href="./index.html" class="p-2 rounded btn-obtener">Comprar</a>
+          <!-- modal -->
+          <div class="modal fade" id="modalHogwartsLegacy" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Hogwarts Legacy
+                  </h2>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                  <img src="./assets/destacado/hogwartsLegacyModal.gif" alt="Starfield" class="img-fluid rounded" />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="p-2 rounded btnModalCerrar" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-lg-7 order-lg-3">
+          <div class="overflowNovedad">
+            <!-- button modal-->
+            <button type="button" class="btnModalMas" data-bs-toggle="modal" data-bs-target="#modalHogwartsLegacy">
+              <i class="bi bi-zoom-in fs-2"></i>
+            </button>
+            <img src="./assets/destacado/hogwartsLegacy.jpg" class="img-fluid rounded img-novedad"
+              alt="Hogwarts Legacy" />
+          </div>
+        </article>
+        <article class="col-12 col-lg-5 order-lg-5">
+          <h2 class="text-novedades">Starfield</h2>
+          <p class="text-novedad-info">
+            Isaac Clarke es un ingeniero cualquiera con la misión de reparar
+            la descomunal nave extractora USG Ishimura, pero descubrirá que
+            algo ha ido terriblemente mal. La tripulación de la nave ha sido
+            asesinada y su querida compañera Nicole está perdida en algún
+            lugar a bordo.
+          </p>
+          <span class="p-2 rounded destacado">Próximamente</span>
+          <a href="./index.html" class="p-2 rounded btn-obtener">Precomprar</a>
+
+          <!-- modal -->
+          <div class="modal fade" id="modalStarfield" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Starfield
+                  </h2>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                  <img src="./assets/destacado/starfieldModal.gif" alt="Starfield" class="img-fluid rounded" />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="p-2 rounded btnModalCerrar" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-lg-7 ordenarRestante">
+          <div class="overflowNovedad">
+            <!-- button modal-->
+            <button type="button" class="btnModalMas" data-bs-toggle="modal" data-bs-target="#modalStarfield">
+              <i class="bi bi-zoom-in fs-2"></i>
+            </button>
+            <img src="./assets/destacado/starfield.jpg" class="img-fluid rounded img-novedad" alt="Starfield" />
+          </div>
+        </article>
+      </section>
+      <section class="row align-items-center rounded ofertas" id="ofertas">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5 class="p-2 text-ofertas animate__animated animate__headShake">
+            OFERTAS ESPECIALES
+          </h5>
+          <a href="./index.html#ofertas" class="p-2 rounded btn-obtener">Ver más</a>
+        </div>
+        <article class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <div class="overflowOfertas">
+              <img src="./assets/ofertas/littleNightmares.jpg" class="card-img-top img-ofertas"
+                alt="Little Nightmares" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Little Nightmares</h5>
+              <p class="card-text">La oferta termina el 6 FEB a las 12:00.</p>
+              <a href="./index.html#ofertas" class="p-2 rounded btn-obtener">Comprar</a>
+              <span class="p-2 rounded descuento">-75%</span>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <div class="overflowOfertas">
+              <img src="./assets/ofertas/rust.jpg" class="card-img-top img-ofertas" alt="Rust" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rust</h5>
+              <p class="card-text">La oferta termina el 6 FEB a las 12:00.</p>
+              <a href="./index.html#ofertas" class="p-2 rounded btn-obtener">Comprar</a>
+              <span class="p-2 rounded descuento">-33%</span>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <div class="overflowOfertas">
+              <img src="./assets/ofertas/outlast2.jpg" class="card-img-top img-ofertas" alt="Hogwarts Legacy" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Outlast 2</h5>
+              <p class="card-text">La oferta termina el 6 FEB a las 12:00.</p>
+              <a href="./index.html#ofertas" class="p-2 rounded btn-obtener">Comprar</a>
+              <span class="p-2 rounded descuento">-85%</span>
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <div class="overflowOfertas">
+              <img src="./assets/ofertas/newWolrd.jpg" class="card-img-top img-ofertas" alt="New World" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">New World</h5>
+              <p class="card-text">La oferta termina el 6 FEB a las 12:00.</p>
+              <a href="./index.html#ofertas" class="p-2 rounded btn-obtener">Comprar</a>
+              <span class="p-2 rounded descuento">-50%</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="p-4 footer-background">
+    <div class="container text-center text-white">
+      <nav class="d-flex justify-content-evenly">
+        <a href="https://www.github.com/tejaby" target="_blank" class="animate__animated animate__tada icono"><i
+            class="bi bi-github fs-4"></i></a>
+        <a href="https://www.twitter.com/yostintejaby" target="_blank" class="animate__animated animate__tada icono"><i
+            class="bi bi-twitter fs-4"></i></a>
+        <a href="https://www.twitch.tv/yostintejaby" target="_blank" class="animate__animated animate__tada icono"><i
+            class="bi bi-twitch fs-4"></i></a>
+      </nav>
+      <small>&copy; 2023 Yostintejaby Corporation</small>
+    </div>
+  </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
